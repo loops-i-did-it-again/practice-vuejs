@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js Intro</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+      <div>1st number: <input type="number" v-model="num1" /></div>
+      <div>2nd number: <input type="number" v-model="num2" /></div>
+      <div>3rd number: <input type="number" v-model="num3" /></div>
+      <div><button v-on:click="computeSum()">Compute sum</button></div>
+      <p>The sum is: {{ result }}</p>
+    </div>
+  </body>
+</html>
+
+<!-- Make variable (v-models) in the inputs and connect to the js -->
+<!-- Make a method connected to a v-on:click to compute sum -->
+<!-- Use the method to print out the sum in the html - create a v-model -->

@@ -16,6 +16,12 @@
       <button v-on:click="changeMessage()">Click me</button>
 
       <input type="text" v-model="name" />
+      <div>
+        <button v-on:click="showExtraInformation = !showExtraInformation">
+          Toggle
+        </button>
+        <p v-if="showExtraInformation">Exta Information</p>
+      </div>
     </div>
   </body>
 </html>

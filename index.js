@@ -4,6 +4,7 @@ var app = new Vue({
     return {
       message: "Hello from JavaScript!",
       name: "Dani",
+      showExtraInformation: false,
     };
   },
   methods: {
