@@ -20,8 +20,16 @@
         <button v-on:click="showExtraInformation = !showExtraInformation">
           Toggle
         </button>
-        <p v-if="showExtraInformation">Exta Information</p>
+        <p v-bind:class="{ disabled: showExtraInformation }">
+          Extra Information
+        </p>
       </div>
     </div>
   </body>
 </html>
+
+<style>
+  .disabled {
+    color: LightGrey;
+  }
+</style>
