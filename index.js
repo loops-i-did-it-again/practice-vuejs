@@ -6,4 +6,9 @@ var app = new Vue({
       name: "Dani",
     };
   },
+  methods: {
+    changeMessage: function () {
+      this.message = "Whoa...";
+    },
+  },
 });
