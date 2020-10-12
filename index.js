@@ -5,11 +5,17 @@ var app = new Vue({
       message: "Hello from JavaScript!",
       name: "Dani",
       showExtraInformation: false,
+      fruits: ["apple", "banana", "cantaloupe"],
+      newFruit: ""
     };
   },
   methods: {
     changeMessage: function () {
       this.message = "Whoa...";
     },
+    addNewFruit: function () {
+      this.fruits.push(this.newFruit);
+      this.newFruit = "";
+    }
   },
 });

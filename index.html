@@ -24,6 +24,11 @@
           Extra Information
         </p>
       </div>
+      <div v-for="fruit in fruits">
+        <p>{{ fruit }}</p>
+      </div>
+      <input type="text" v-model="newFruit" />
+      <button v-on:click="addNewFruit()">Add fruit</button>
     </div>
   </body>
 </html>
